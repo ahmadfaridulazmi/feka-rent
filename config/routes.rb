@@ -4,9 +4,7 @@ Rails.application.routes.draw do
     get '/auth', to: 'auth#user'
     get '/api', to: 'api#users'
   end
-
-  resources :user
-
   root 'home#index'
+  resources :users
 
 end
